@@ -153,6 +153,7 @@ func NewCmdCreate(f cmdutil.Factory, ioStreams genericiooptions.IOStreams) *cobr
 	cmd.AddCommand(NewCmdCreatePodDisruptionBudget(f, ioStreams))
 	cmd.AddCommand(NewCmdCreatePriorityClass(f, ioStreams))
 	cmd.AddCommand(NewCmdCreateJob(f, ioStreams))
+	cmd.AddCommand(NewCmdRun(f, ioStreams))
 	cmd.AddCommand(NewCmdCreateCronJob(f, ioStreams))
 	cmd.AddCommand(NewCmdCreateIngress(f, ioStreams))
 	cmd.AddCommand(NewCmdCreateToken(f, ioStreams))
